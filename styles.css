@@ -1,0 +1,31 @@
+.grid {
+    background-color: white;
+    display: flex;
+    height: 40em;
+    width: 40em;
+}
+
+
+
+.gamecell {
+    background-color: white;
+    padding: 0px;
+    border: 1px solid black;
+    animation: gameShadowZoom 3s ease infinite;
+}
+
+@keyframes gameShadowZoom {
+  0% {
+    box-shadow: 3px 3px #000000;
+  }
+  50% {
+    box-shadow: 10px 10px #000000;
+  }
+  100% {
+    box-shadow: 3px 3px #000000;
+  }
+}
+
+.gamecell:hover {
+    border: 1px solid red;
+}
